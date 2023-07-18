@@ -235,7 +235,66 @@ header ul li a{
 }
 
 
-  /* ........gamer section start........ */
+  /* ........gamer section end........ */
+
+  /* ........card section start........ */
+
+.card-sec{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+  margin: 5rem;
+}
+
+.card-sec h3{
+  color: var(--primary-color);
+  font-size: 3rem;
+  font-weight: 700;
+}
+
+.card-sec h3>span{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.card-sec>span{
+  color: #534C64;
+  font-size: 1.25rem;
+  font-weight: 400;
+  text-align: center;
+}
+
+.card-container{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  gap: 2rem;
+}
+
+.card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2rem;
+  width: 18rem;
+  text-decoration: none;
+}
+
+.card>img{
+  width: 100%;
+}
+
+.card>span{
+  color: #534C64;
+  font-size: 1.25rem;
+  font-weight: 500;
+  line-height: 1.85rem;
+}
+
+  /* ........card section end........ */
 
 
 
@@ -283,6 +342,16 @@ header ul li a{
     gap: 1.5rem;
   }
 
+  .card-sec{
+    margin: 2rem;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+  }
+
 }
 
 
@@ -327,6 +396,16 @@ header ul li a{
     align-items: center;
     text-align: center;
     gap: 1.5rem;
+  }
+
+  .card-sec{
+    margin: 2rem;
+  }
+
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
   }
 
 }
