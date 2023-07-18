@@ -9,9 +9,34 @@
 :root{
   --primary-color: #0B0223;
   --secondary-color: #FF42A5;
-  --linear-color: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
   --btn-color: #4EC5F7;
 }
+
+.btn-primary{
+  background-color: var(--secondary-color);
+  padding: 1.25rem 2.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+.btn-secondary{
+  background-color: var(--btn-color);
+  padding: 1.25rem 2.5rem;
+  border-radius: 3rem;
+  border: none;
+  font-weight: 600;
+  font-size: 1.25rem;
+  text-transform: uppercase;
+  color: #FFFFFF;
+  cursor: pointer;
+}
+
+ /* ........header section start........ */
 
 header{
   display: flex;
@@ -29,13 +54,13 @@ header{
   gap: 1.25rem;
 }
 
-.logo>h2{
+.logo>h3{
   font-size: 2.8rem;
   font-weight: 700;
   color: var(--primary-color);
 }
 
-.logo>h2>span{
+.logo>h3>span{
   color: var(--secondary-color);
 }
 
@@ -83,6 +108,134 @@ header ul li a{
   width: 100%;
 }
 
+ /* ........header section end........ */
+
+  /* ........hero section start........ */
+
+ .hero{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+ }
+
+ .hero-content{
+  background-image: url(images/Group\ 14.png);
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+  width: 40%;
+  padding: 4.5rem 5rem;
+ }
+
+ .hero-content h3{
+  color: var(--primary-color);
+  font-weight: 600;
+  font-size: 3rem;
+  text-transform: uppercase;
+ }
+
+ .hero-content h1{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-size: 6rem;
+  font-weight: 800;
+ }
+
+ .hero-span{
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 1rem;
+ }
+
+ .hero-span>span{
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+ }
+
+.hero-btn{
+  display: flex;
+  align-items: center;
+  gap: .5rem;
+  margin-top: 1rem;
+}
+
+.hero-img{
+  width: 40%;
+  padding: 0 5rem;
+}
+
+ .hero-img>img{
+  width: 100%;
+ }
+
+  /* ........hero section end........ */
+
+  /* ........gamer section start........ */
+
+.gamer{
+  background: linear-gradient(90deg, rgba(255, 66, 165, 0.03) 0%, rgba(255, 66, 165, 0.03) 100%);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 2.5rem 5rem;
+}
+
+.gamer-pic{
+  width: 50%;
+}
+
+.gamer-pic>img{
+  width: 100%;
+}
+
+.gamer-content{
+  width: 45%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: end;
+  text-align: end;
+  gap: 1.5rem;
+}
+
+.gamer-content h3{
+  background: linear-gradient(180deg, #F948B2 0%, #8758F1 100%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+  font-size: 3rem;
+}
+
+.gamer-content>span{
+  color: #534C64;
+  font-size: 1.17rem;
+  font-weight: 400;
+  line-height: 1.83rem;
+}
+
+.gamer-content h4{
+  color: #534C64;
+  line-height: 2.75rem;
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+
+.gamer-content h4>span{
+  font-size: 2rem;
+  font-weight: 700;
+}
+
+
+  /* ........gamer section start........ */
 
 
 
@@ -99,6 +252,37 @@ header ul li a{
     flex-direction: column;
   }
 
+  .hero{
+    flex-direction: column-reverse;
+    gap: 1rem;
+   }
+
+   .hero-img{
+    width: 60%;
+    margin: 0 auto;
+   }
+
+   .hero-content{
+    width: 60%;
+    align-items: center;
+   }
+
+   .gamer{
+    flex-direction: column;
+    padding: 2.5rem auto;
+   }
+
+   .gamer-pic{
+    width: 100%;
+  }
+
+  .gamer-content{
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
 }
 
 
@@ -112,4 +296,37 @@ header ul li a{
     gap: 2rem;
     padding: 1.5rem 0;
   }
+
+  .hero{
+    flex-direction: column-reverse;
+    gap: 1rem;
+   }
+
+   .hero-img{
+    width: 80%;
+    margin: 0 auto;
+   }
+
+   .hero-content{
+    width: 80%;
+    align-items: center;
+    margin: 0 auto;
+   }
+
+   .gamer{
+    flex-direction: column;
+    padding: 2.5rem auto;
+   }
+
+   .gamer-pic{
+    width: 100%;
+  }
+
+  .gamer-content{
+    width: 90%;
+    align-items: center;
+    text-align: center;
+    gap: 1.5rem;
+  }
+
 }
