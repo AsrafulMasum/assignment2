@@ -252,6 +252,7 @@ header ul li a{
   color: var(--primary-color);
   font-size: 3rem;
   font-weight: 700;
+  text-align: center;
 }
 
 .card-sec h3>span{
@@ -408,4 +409,14 @@ header ul li a{
     gap: 2rem;
   }
 
+}
+
+
+
+@media screen and (min-width:992px) and (max-width:1200px) {
+  .card-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 2rem;
+  }
 }
