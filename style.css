@@ -590,6 +590,7 @@ footer .logo h3{
 
   .btn-category{
     width: auto;
+    gap: .5rem;
   }
 
   .btn-category>span{
