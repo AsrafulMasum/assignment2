@@ -433,6 +433,10 @@ header ul li a{
   color: var(--secondary-color);
 }
 
+  /* ........category section end........ */
+
+  /* ........footer section start........ */
+
 footer{
   height: 30rem;
   background-color: var(--primary-color);
@@ -443,7 +447,7 @@ footer{
   gap: 3.5rem;
 }
 
-.logo h3{
+footer .logo h3{
   color: #FFFFFF;
 }
 
@@ -489,7 +493,7 @@ footer{
   text-align: center;
 }
 
-
+  /* ........footer section end........ */
 
 
 @media screen and (max-width:576px) {
@@ -586,6 +590,10 @@ footer{
 
   .btn-category{
     width: auto;
+  }
+
+  .btn-category>span{
+    font-size: .5rem;
   }
 
   footer{
